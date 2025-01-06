@@ -11,8 +11,10 @@ config :webgl_api,
   generators: [timestamp_type: :utc_datetime]
 
 config :cors_plug,
-       origin: ["http://localhost:3000"],
-       headers: ["Content-Type", "Accept"]
+       origin: ["http://localhost:3000","https://react-wasm-holy-violet-8070.fly.dev"],
+       headers: ["Content-Type", "Accept"],
+       methods: ["POST"]
+
 
 # Configures the endpoint
 config :webgl_api, WebglApiWeb.Endpoint,
